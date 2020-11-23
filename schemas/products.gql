@@ -1,0 +1,11 @@
+type Product {
+    id: Int
+    species: String!
+    origin: String!
+    price: Int!
+ }
+
+ type Query {
+    allProducts: [Product!]!
+    getProductById(id: Int): Product!
+ }
